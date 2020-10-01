@@ -44,7 +44,7 @@
         <div class="admin-header">
           <div class="toyspace-logo">
             <img
-              src="https://by3301files.storage.live.com/y4pfQ0YVSm7GxnBWdUro3zYfL3ElMkoN1WZna9iP7fHgn6roh6A1sZ7NQKuKgpD2p9OBEA-EmX2-RTIplH2SBiEdVDDnM27tVQfwv0K1gmZBZFrrBt5DsCkNTAhZqRxPFWwdEtCSwMvpso5ejHK9Jfif3sb4-q0OjDpIsCycRA5j0WXA_pHCjMTPKdcJt6gUWH4g0dW6A8-i-2i64aW62hnV2VZZlbczvezCEqAH99tyLU/%EB%B0%98%EC%A0%84.png?psid=1&width=734&height=636"
+              src="<%=request.getContextPath()%>/image/common/blacklogo.png"
               alt=""
               width="150px"
               height="100"
