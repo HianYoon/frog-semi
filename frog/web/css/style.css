@@ -6,58 +6,6 @@
   --black-color: #111111;
 }
 
-ul {
-  list-style: none;
-}
-
-div.logo {
-  width: 7%;
-  display: block;
-  margin: 0;
-}
-
-div.logo img.logo {
-  width: 40px;
-  height: 40px;
-  margin: 5px 5px 3px 20px;
-}
-
-.nav-items {
-  display: flex;
-  background-color: black;
-}
-
-.primaryNav {
-  display: flex;
-  color: white;
-  width: 60%;
-  margin: 0;
-}
-
-.primaryNav > li {
-  padding: 10px;
-}
-
-.secondaryNav {
-  display: flex;
-  width: 30%;
-  margin: 0;
-}
-.secondaryNav > li {
-  padding: 10px;
-}
-.secondaryNav > li > a {
-  background-color: black;
-  color: white;
-  font-size: 20px;
-}
-div.search {
-  width: 200px;
-  padding: 5px;
-  background-color: white;
-  border-radius: 30px;
-  font-size: 14px;
-}
 
 /* section */
 .section,
@@ -135,6 +83,10 @@ div.main2-2 {
   border-radius: 30px;
   font-size: 13px;
   font-weight: bolder;
+}
+
+div.main2-shop>p{
+	margin: 20px 0;
 }
 /* main3 */
 

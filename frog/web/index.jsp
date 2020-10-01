@@ -7,14 +7,11 @@
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title>Insert title here</title>
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css" />
 </head>
 <body>
 	<%@ include file="views/common/header.jsp" %>
-	<link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/b7b78fb10e.js"
-      crossorigin="anonymous"></script>
-	    <!-- section main pic-->
+<!-- section main pic-->
     <section class="section">
       <div class="main-container">
         <div class="text-main">
@@ -33,7 +30,7 @@
         <div class="pic">
           <div class="img-container">
             <a href="">
-              <img src="pics/wetmore.JPG" alt="" />
+              <img src="<%=request.getContextPath()%>/image/product/wetmore.JPG" alt="" />
             </a>
           </div>
         </div>
