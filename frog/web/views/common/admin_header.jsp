@@ -64,6 +64,7 @@
             <li><a href="">회원관리</a></li>
             <li><a href="">주문관리</a></li>
             <li><a href="">상품등록</a></li>
+            <li><a href="">재고관리</a></li>
             <li><a href="">매출관리</a></li>
             <li><a href="">태그등록</a></li>
             <li><a href="">관리자 계정</a></li>
