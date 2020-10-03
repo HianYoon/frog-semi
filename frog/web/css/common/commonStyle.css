@@ -13,11 +13,11 @@
 
 }
 
-a{
+header a{
   text-decoration: none;
 }
 
-header ul, ol, li{
+header ul, header ol, header li{
   list-style-type: none;
 }
 
