@@ -1,6 +1,6 @@
 :root {
   /* color */
-  font-family: "Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --font-default: "Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
 
   --black-color: #111111;

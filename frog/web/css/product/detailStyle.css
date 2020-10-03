@@ -1,14 +1,13 @@
-* {
+section * {
   box-sizing: border-box;
 }
-body {
-  font-family: Verdana, sans-serif;
+section {
   margin: 0;
 }
 .mySlides {
   display: none;
 }
-img {
+section img {
   vertical-align: middle;
 }
 

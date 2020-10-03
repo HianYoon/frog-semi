@@ -149,7 +149,7 @@
 </div>
     <script>
         // 이미지 슬라이드
-      var slideIndex = 1;
+      let slideIndex = 1;
       showSlides(slideIndex);
 
       function plusSlides(n) {
@@ -161,9 +161,9 @@
       }
 
       function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -180,8 +180,7 @@
         dots[slideIndex - 1].className += " active";
       }
     </script>
-  </body>
-</html>
+
 
 </section>
 <%@ include file="/views/common/footer.jsp"%>
