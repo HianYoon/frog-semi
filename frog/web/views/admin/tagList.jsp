@@ -103,8 +103,8 @@
     <script>
       function fn_addTag() {
     	  /* 팝업창 열리는 화면전환 서블릿 구현해야함 */
-        const url = "<%=request.getContextPath()%>/admin/addTag";
-        const status = "width=400px,height=220px,top=200px,left=500px";
+        const url = "<%=request.getContextPath()%>/views/admin/addTag.jsp";
+        const status = "width=400px,height=250px,top=200px,left=500px";
         open(url, "", status);
       }
     </script>
