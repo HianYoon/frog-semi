@@ -55,6 +55,7 @@
       <h2>태그관리</h2>
       <div class="search-container">
         태그 조회:
+        <!--상품 ID에서 select로 나오게끔해서 조회하는게 더 나을 수도 ??   -->
         <select class="searchType">
           <option value="itemId">상품ID</option>
           <option value="tagName">태그명</option>
@@ -66,7 +67,7 @@
               type="text"
               name="searchKeyword"
               placeholder="상품ID"
-              size="25"
+              size="10"
               value=""
             />
             <button type="submit">검색</button>
