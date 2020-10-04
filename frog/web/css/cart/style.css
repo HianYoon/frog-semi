@@ -1,0 +1,291 @@
+.container{
+    width: 1500px;
+    height: 1280px;
+    margin: 10px auto;
+    padding: 10px;
+}
+/* .minus{
+    width:40px;
+    height:30px;
+    background-color: black;
+    color:white;
+} */
+/* 위쪽 부분 */
+.top{
+    display:flex;
+    justify-content: space-around;
+    width: 1500px;
+    /* border: 2px solid purple; */
+}
+.top .left{
+    margin-bottom: -5px;
+}
+/* 내 카트 */
+.top .left h1{
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+/* 아이템 수량 가격 */
+.top1{
+    display:flex;
+    flex-direction: wrap;
+    justify-content: flex-start;
+    width: 1000px;
+    /* border: 2px solid red; */
+}
+.top1 .ITEM{
+    max-width:100%;
+    padding-right: 740px;
+}
+.top1 .QTY{
+    max-width:100%;
+    padding-right: 150px;
+}
+/* 상품쪽 */
+.top2{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    width: 1000px;
+    height: 140px;
+}
+/* 상품 이미지 */
+.top2 .imgg img{
+    width:150px;
+    height:140px;
+}
+/* 상품 이름 */
+.top2 .name{
+    width:400px;
+    height:140px;
+}
+.top2 .name .name1 p{
+    padding-top: 30px;
+}
+/* 쓰레기통 아이콘 */
+.top2 .trash{
+    width:150px;
+    height:140px;
+}
+.top2 .trash .white-icon{
+    width:50px;
+    height:50px;
+    border: 0;
+    
+    position: relative;
+    left: 40px;
+    top: 50px;
+    background-color : white;
+    /* border: 2px solid pink; */
+}
+.top2 .trash .white-icon .far fa-trash{
+    background-color: black;
+}
+/* 버튼 쪽 */
+.top2 .plus2{
+    display:flex;
+    justify-content: center;
+    width: 240px;
+    height:140px;
+    /* border: 2px solid blue; */
+}
+.top2 .plus3{
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 30px;
+    /* border: 2px solid pink; */
+    border-radius: 30px;
+    background-color: rgb(243,243,247);
+}
+/* 버튼 - 쪽 */
+.top2 .plus2 .plus3 .minus{
+    border: 0;
+    outline: 0;
+    border-radius : 30px;
+    background-color: rgb(243,243,247);
+}
+.top2 .plus2 .plus3 .minus:hover{
+    background-color: black;
+}
+/* 버튼 사이 숫자 쪽 */
+.top2 .plus2 .plus3 .int{
+    padding-top: 4px;
+}
+/* 버튼 + 쪽 */
+.top2 .plus2 .plus3 .plus{
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    background-color: rgb(243,243,247);
+}
+/* 제품 가격 */
+.top2 .money{
+    display:flex;
+    justify-content: center;
+    width:100px;
+    height: 140px;
+    /* border: 2px solid blue; */
+    
+}
+.top2 .money p{
+    margin-top: 60px;
+    margin-left: 40px;
+    text-align: right;
+    font-size: small;
+}
+ /* 오른쪽 */
+.right{
+    width : 300px;
+    height : 300px;
+    margin-top: 30px;
+    background-color: rgb(243,243,247);
+    padding: 10px;
+    /* border: 2px solid blue; */
+}
+/* 오른쪽 항목  */
+.right .summary{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 20px;
+}
+
+.right .summary .summary-left{
+}
+
+/* 체크 아웃을 클릭하면 어쩌고 부분 */
+.right .mid2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.right .mid p{
+    font-weight:bold;
+}
+/* SUBTOTAL 달러 쪽 */
+.right .mid2 .SUBTOTAL-right{
+    font-weight:bolder
+}
+/* 무료 배송쪽 */
+.right .bottom{
+    display:inline-block;
+    align-content: center;
+    width:300px;
+    /* border: 2px solid pink; */
+}
+.right .bottom p{
+    text-align: center;
+    font-size: medium;
+    font-weight:bold;
+}
+/* 체크 아웃 버튼 */
+.right .bottom button{
+    display:block;
+    width:100%;
+    height:40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+
+/* 권장 사항 쪽 */
+.btm{
+    margin: 10px auto;
+    padding: 10px;
+    width: 1400px;
+    /* border: 2px solid blue; */
+}
+.btm .dc{
+    display: flex;
+    justify-content: space-between;
+}
+/* 조커 이미지쪽 */
+.btm .first{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(243,243,247);
+    border-radius : 10px;
+    /* border: 2px solid pink; */
+}
+.btm .first p{
+    margin-top: -10px;
+}
+.btm .first button{
+    width:100%;
+    height:40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+/* 할리퀸 이미지쪽 */
+.btm .second{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(243,243,247);
+    border-radius : 10px;
+    /* border: 2px solid pink; */
+}
+.btm .second p{
+    margin-top: -10px;
+}
+.btm .second button{
+    width:100%;
+    height:40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+/* 배트맨 이미지쪽 */
+.btm .third{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(243,243,247);
+    border-radius : 10px;
+    /* border: 2px solid pink; */
+}
+.btm .third p{
+    margin-top: -10px;
+}
+.btm .third button{
+    width:100%;
+    height:40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+/* 슈퍼맨 이미지쪽 */
+.btm .force{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(243,243,247);
+    border-radius : 10px;
+    /* border: 2px solid pink; */
+}
+.btm .force p{
+    margin-top: -10px;
+}
+.btm .force button{
+    width:100%;
+    height:40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
