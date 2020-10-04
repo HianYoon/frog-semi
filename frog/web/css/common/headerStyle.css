@@ -323,8 +323,8 @@
 	padding-top: 9px;
 	padding-bottom: 17px;
 	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	bottom: 2%;
+	right: 2%;
 	cursor: pointer;
 	font-size: 20px;
 	color: var(--menu-white);
@@ -337,8 +337,8 @@
 	width: 340px;
 	height: 540px;
 	position: fixed;
-	bottom: 20px;
-	right:30px;
+	bottom: 2%;
+	right:2%;
 	z-index: 1100;
 	border-radius: 10px;
 	border: var(--menu-black) solid 1px;
