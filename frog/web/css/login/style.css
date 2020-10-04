@@ -4,29 +4,29 @@
     
 }
     /* 로그인창 */
-body{
+section{
     justify-content: center;
     display: flex;
     align-items: center;
 }
-h1{
+section h1{
     text-align: center;
 }
 .logo1-area,.logo2-area{
     text-align: center;
 }
-#fun{
+section #fun{
     width: 50%;
     height: 50%;
 }
-.in-area h1{
+section .in-area h1{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
 
 }
-.in-area{width: 450px; position: relative;}
-.in-area input{
+section .in-area{width: 450px; position: relative;}
+section .in-area input{
     text-align: center;
     width: 100%;
     padding: 20px 10px 10px;
@@ -36,12 +36,12 @@ h1{
     font-size: 15px;
     outline: none;
 }
-.btn-area{
+section .btn-area{
     margin-top: 20px;
     text-align: center;
 }
-.btn-area button{
-    width: 30%;
+section .btn-area button{
+    min-width: 30%;
     height: 40px;
     border-radius: 50px;
     background-color: white;
@@ -50,16 +50,16 @@ h1{
 
 
 }
-.caption{
+section .caption{
     margin-top: 10px;
     text-align: right;
 }
-.caption a{
+section .caption a{
     font-size: 14px;
     text-decoration: none;
     color: blue;
 }
-.last-area{
+section .last-area{
     margin-top: 10px;
     text-align: center;
 }
@@ -114,7 +114,7 @@ h1{
 }
 
 /* 비밀번호찾기 */
-h2{
+section h2{
    text-align: center;
    padding: 10px;
 }
@@ -136,4 +136,9 @@ h2{
 }
 .btn-area button{
     margin: 30px;
+}
+.login-form{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10%;
 }

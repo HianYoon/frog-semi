@@ -5,19 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" type="text/css" 
-href="<%=request.getContextPath() %>/css/style.css">
+href="<%=request.getContextPath() %>/css/login/style.css">
 </head>
 <body>
+	<%@ include file="/views/common/header.jsp" %>
  <section>
         <form class="qwe">
             <div class="logo-area1">
-                <img src="<%=request.getContextPath()%>/image/asd1.png" alt="toyspace">
+                <img src="<%=request.getContextPath()%>/image/login/blacklogo-small.png" alt="toyspace">
             </div>
             
             <div class="logo-area2">    
-                <img src="<%=request.getContextPath()%>/image/pikachu.png" alt="funko">
+                <img src="<%=request.getContextPath()%>/image/login/pikachu.png" alt="funko">
             </div>
 
             <h1>SIGN UP</h1>
@@ -39,5 +39,6 @@ href="<%=request.getContextPath() %>/css/style.css">
             </div>
         </form>
     </section>
+    <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

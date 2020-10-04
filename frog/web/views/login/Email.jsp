@@ -5,15 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" type="text/css" 
-href="<%=request.getContextPath() %>/css/style.css">
+href="<%=request.getContextPath() %>/css/login/style.css">
 </head>
 <body>
+<%@ include file="/views/common/header.jsp" %>
 <section>
 	<div class="email-container">
         <div class="logo-img">
-            <img src="<%=request.getContextPath()%>/image/asd1.png">
+            <img src="<%=request.getContextPath()%>/image/login/blacklogo-small.png">
         </div>
             <h1>비밀번호 변경하기</h1>  
         <div class="pw-area">
@@ -27,5 +27,6 @@ href="<%=request.getContextPath() %>/css/style.css">
         </div>
     </div>    
     </section>
+    <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

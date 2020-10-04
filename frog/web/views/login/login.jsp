@@ -5,17 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" type="text/css" 
-href="<%=request.getContextPath() %>/css/style.css">
+href="<%=request.getContextPath() %>/css/login/style.css">
 </head>
 <body>
+<%@ include file="/views/common/header.jsp" %>
 <section class ="login-form">
            <div class="logo1-area">
-                <img src="<%=request.getContextPath()%>/image/asd1.png" alt="">
+                <img src="<%=request.getContextPath()%>/image/login/blacklogo-small.png" alt="">
             </div>
             <div class="logo2-area">
-                <img src="<%=request.getContextPath()%>/image/pikachu.png" alt="fun" id="fun">
+                <img src="<%=request.getContextPath()%>/image/login/pikachu.png" alt="fun" id="fun">
             </div>
                 <h1>LOG IN</h1>
             <div class="in-area">
@@ -35,6 +35,7 @@ href="<%=request.getContextPath() %>/css/style.css">
             <div class="last-area">
                 <p>ToySpace는 처음이신가요?<a href=""> 지금 가입하기</a></p>
             </div>
-   </section> 
+   </section>
+   <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

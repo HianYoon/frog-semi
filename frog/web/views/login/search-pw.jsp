@@ -5,15 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" type="text/css" 
-href="<%=request.getContextPath() %>/css/style.css">
+href="<%=request.getContextPath() %>/css/login/style.css">
 </head>
 <body>
+<%@ include file="/views/common/header.jsp" %>
  <section>
         <form action="">
             <div class="logo-area1">
-                <img src="<%=request.getContextPath()%>/image/asd1.png">
+                <img src="<%=request.getContextPath()%>/image/login/blacklogo-small.png">
             </div>
                 <h2>TOYSPACE 계정 찾기</h2>
                 <p>비밀번호 재설정이 필요하신가요? 이메일주소를 입력해주세요.</p>
@@ -29,5 +29,6 @@ href="<%=request.getContextPath() %>/css/style.css">
             </div>
         </form>
     </section>
+        <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
