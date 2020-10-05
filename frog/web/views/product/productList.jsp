@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/products/productsStyle.css" />
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/product/productListStyle.css" />
 </head>
 <body>
 	<%@ include file="/views/common/header.jsp" %>
