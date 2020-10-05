@@ -2,7 +2,12 @@ google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart1);
       google.charts.setOnLoadCallback(drawChart2);
       google.charts.setOnLoadCallback(drawChart3);
-
+      
+      $(window).resize(()=>{
+        google.charts.setOnLoadCallback(drawChart1);
+        google.charts.setOnLoadCallback(drawChart2);
+        google.charts.setOnLoadCallback(drawChart3);
+      })
       function drawChart1() {
         var data = google.visualization.arrayToDataTable([
           ['Year', 'Sales', 'Expenses'],
