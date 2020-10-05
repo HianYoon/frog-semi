@@ -20,15 +20,17 @@ href="<%=request.getContextPath() %>/css/login/style.css">
                 <img src="<%=request.getContextPath()%>/image/login/pikachu.png" alt="funko">
             </div>
 
-            <h1>SIGN UP</h1>
             <div class="si-area">
-                <input type="text" id="name" name="name" autocomplete="off" placeholder="아이디를 입력해주세요" required><br>
-                <input type="email" id="email" name="email" autocomplete="off" placeholder="이메일을 입력해주세요" required><br>
-                <input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요" required><br>
+            	<h1>SIGN UP</h1>
+                	<input type="text" id="id" name="id" autocomplete="off" placeholder="아이디를 입력해주세요" required><br>
+                	<input type="text" id="name" name="name" autocomplete="off" placeholder="아름를 입력해주세요" required><br>
+                	<input type="text" id="nickname" name="nickname" autocomplete="off" placeholder="닉네임을 입력해주세요" required><br>
+                	<input type="email" id="email" name="email" autocomplete="off" placeholder="이메일을 입력해주세요" required><br>
+                	<input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요" required><br>
             </div>
             <div class="news">
                 <input type="checkbox"><label> THE LATEST NEWS ABOUT POP CULTURE AND FUNKO.<br> 
-                    SIGN ME UP FOR THE WEEKLY FUNKO NEWSLETTER.</label></input>
+                    SIGN ME UP FOR THE WEEKLY FUNKO NEWSLETTER.</label>
             </div>
             <div class="btn-area1">
                 <button>가입하기</button>
