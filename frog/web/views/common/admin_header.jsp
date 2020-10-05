@@ -9,16 +9,16 @@
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Document</title>
     <style>
-        .admin-header {
+        header .admin-header {
           display: flex;
           justify-content: center;
           align-items: center;
           background-color:black;
         }
-        .title{
+        header .title{
             color:white;
         }
-        nav > ul {
+        header nav > ul {
           display: flex;
           justify-content: space-around;
           list-style-type: none;
@@ -27,11 +27,11 @@
           padding:10px;
        
         }
-        nav > ul > li > a:hover {
+        header nav > ul > li > a:hover {
           color: yellow;
         }
   
-        nav > ul > li > a {
+        header nav > ul > li > a {
           text-decoration: none;
           color: white;
           font-weight: bolder;
