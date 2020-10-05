@@ -35,11 +35,11 @@
                                 <label for="">Featured</label>
                                 <div>
                                     <ul>
-                                        <li>
+                                        <li class="filter_li">
                                             <label for=""><input type="checkbox" value="best sellers"></label>
                                             <span>best sellers (#)</span>
                                         </li>
-                                        <li>
+                                        <li class="filter_li">
                                             <label for=""><input type="checkbox" value="new releases"></label>
                                             <span>new releases (#)</span>
                                         </li>
