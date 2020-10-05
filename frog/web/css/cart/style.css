@@ -1,4 +1,4 @@
-.container{
+section .container{
     width: 1500px;
     height: 1280px;
     margin: 10px auto;
@@ -11,39 +11,39 @@
     color:white;
 } */
 /* 위쪽 부분 */
-.top{
+section .top{
     display:flex;
     justify-content: space-around;
     width: 1500px;
     /* border: 2px solid purple; */
 }
-.top .left{
+section .top .left{
     margin-bottom: -5px;
 }
 /* 내 카트 */
-.top .left h1{
+section .top .left h1{
     font-size: 3rem;
     font-weight: 900;
     
 }
 /* 아이템 수량 가격 */
-.top1{
+section .top1{
     display:flex;
     flex-direction: wrap;
     justify-content: flex-start;
     width: 1000px;
     /* border: 2px solid red; */
 }
-.top1 .ITEM{
+section .top1 .ITEM{
     max-width:100%;
     padding-right: 740px;
 }
-.top1 .QTY{
+section .top1 .QTY{
     max-width:100%;
     padding-right: 150px;
 }
 /* 상품쪽 */
-.top2{
+section .top2{
     display: flex;
     /* justify-content: flex-start; */
     align-items: center;
@@ -51,24 +51,24 @@
     height: 140px;
 }
 /* 상품 이미지 */
-.top2 .imgg img{
+section .top2 .imgg img{
     width:150px;
     height:140px;
 }
 /* 상품 이름 */
-.top2 .name{
+section .top2 .name{
     width:400px;
     height:140px;
 }
-.top2 .name .name1 p{
+section .top2 .name .name1 p{
     padding-top: 30px;
 }
 /* 쓰레기통 아이콘 */
-.top2 .trash{
+section .top2 .trash{
     width:150px;
     height:140px;
 }
-.top2 .trash .white-icon{
+section .top2 .trash .white-icon{
     width:50px;
     height:50px;
     border: 0;
@@ -79,18 +79,18 @@
     background-color : white;
     /* border: 2px solid pink; */
 }
-.top2 .trash .white-icon .far fa-trash{
+section .top2 .trash .white-icon .far fa-trash{
     background-color: black;
 }
 /* 버튼 쪽 */
-.top2 .plus2{
+section .top2 .plus2{
     display:flex;
     justify-content: center;
     width: 240px;
     height:140px;
     /* border: 2px solid blue; */
 }
-.top2 .plus3{
+section .top2 .plus3{
     margin-top: 60px;
     display:flex;
     justify-content: space-between;
@@ -101,28 +101,28 @@
     background-color: rgb(243,243,247);
 }
 /* 버튼 - 쪽 */
-.top2 .plus2 .plus3 .minus{
+section .top2 .plus2 .plus3 .minus{
     border: 0;
     outline: 0;
     border-radius : 30px;
     background-color: rgb(243,243,247);
 }
-.top2 .plus2 .plus3 .minus:hover{
+section .top2 .plus2 .plus3 .minus:hover{
     background-color: black;
 }
 /* 버튼 사이 숫자 쪽 */
-.top2 .plus2 .plus3 .int{
+section .top2 .plus2 .plus3 .int{
     padding-top: 4px;
 }
 /* 버튼 + 쪽 */
-.top2 .plus2 .plus3 .plus{
+section .top2 .plus2 .plus3 .plus{
     border: 0;
     outline: 0;
     border-radius: 30px;
     background-color: rgb(243,243,247);
 }
 /* 제품 가격 */
-.top2 .money{
+section .top2 .money{
     display:flex;
     justify-content: center;
     width:100px;
@@ -130,14 +130,14 @@
     /* border: 2px solid blue; */
     
 }
-.top2 .money p{
+section .top2 .money p{
     margin-top: 60px;
     margin-left: 40px;
     text-align: right;
     font-size: small;
 }
  /* 오른쪽 */
-.right{
+section .right{
     width : 300px;
     height : 300px;
     margin-top: 30px;
@@ -146,43 +146,43 @@
     /* border: 2px solid blue; */
 }
 /* 오른쪽 항목  */
-.right .summary{
+section .right .summary{
     display: flex;
     justify-content: space-between;
     width: 300px;
     font-size: 20px;
 }
 
-.right .summary .summary-left{
+section .right .summary .summary-left{
 }
 
 /* 체크 아웃을 클릭하면 어쩌고 부분 */
-.right .mid2{
+section .right .mid2{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
-.right .mid p{
+section .right .mid p{
     font-weight:bold;
 }
 /* SUBTOTAL 달러 쪽 */
-.right .mid2 .SUBTOTAL-right{
+section .right .mid2 .SUBTOTAL-right{
     font-weight:bolder
 }
 /* 무료 배송쪽 */
-.right .bottom{
+section .right .bottom{
     display:inline-block;
     align-content: center;
     width:300px;
     /* border: 2px solid pink; */
 }
-.right .bottom p{
+section .right .bottom p{
     text-align: center;
     font-size: medium;
     font-weight:bold;
 }
 /* 체크 아웃 버튼 */
-.right .bottom button{
+section .right .bottom button{
     display:block;
     width:100%;
     height:40px;
@@ -195,28 +195,28 @@
 }
 
 /* 권장 사항 쪽 */
-.btm{
+section .btm{
     margin: 10px auto;
     padding: 10px;
     width: 1400px;
     /* border: 2px solid blue; */
 }
-.btm .dc{
+section .btm .dc{
     display: flex;
     justify-content: space-between;
 }
 /* 조커 이미지쪽 */
-.btm .first{
+section .btm .first{
     width: 300px;
     padding: 10px;
     background-color: rgb(243,243,247);
     border-radius : 10px;
     /* border: 2px solid pink; */
 }
-.btm .first p{
+section .btm .first p{
     margin-top: -10px;
 }
-.btm .first button{
+section .btm .first button{
     width:100%;
     height:40px;
     border-radius: 20px;
@@ -227,17 +227,17 @@
     color: white;
 }
 /* 할리퀸 이미지쪽 */
-.btm .second{
+section .btm .second{
     width: 300px;
     padding: 10px;
     background-color: rgb(243,243,247);
     border-radius : 10px;
     /* border: 2px solid pink; */
 }
-.btm .second p{
+section .btm .second p{
     margin-top: -10px;
 }
-.btm .second button{
+section .btm .second button{
     width:100%;
     height:40px;
     border-radius: 20px;
@@ -248,17 +248,17 @@
     color: white;
 }
 /* 배트맨 이미지쪽 */
-.btm .third{
+section .btm .third{
     width: 300px;
     padding: 10px;
     background-color: rgb(243,243,247);
     border-radius : 10px;
     /* border: 2px solid pink; */
 }
-.btm .third p{
+section .btm .third p{
     margin-top: -10px;
 }
-.btm .third button{
+section .btm .third button{
     width:100%;
     height:40px;
     border-radius: 20px;
@@ -269,17 +269,17 @@
     color: white;
 }
 /* 슈퍼맨 이미지쪽 */
-.btm .force{
+section .btm .force{
     width: 300px;
     padding: 10px;
     background-color: rgb(243,243,247);
     border-radius : 10px;
     /* border: 2px solid pink; */
 }
-.btm .force p{
+section .btm .force p{
     margin-top: -10px;
 }
-.btm .force button{
+section .btm .force button{
     width:100%;
     height:40px;
     border-radius: 20px;
