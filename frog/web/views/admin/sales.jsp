@@ -25,6 +25,6 @@
 		</section>
 	</body>
 	<script src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="../../js/admin/sales.js"></script>
-	<link rel="stylesheet" href="../../css/admin/sales.css" />
+	<script src="<%=request.getContextPath() %>/js/admin/sales.js"></script>
+	<link rel="stylesheet" href="<%=request.getContextPath() %>/css/admin/sales.css" />
 </html>
