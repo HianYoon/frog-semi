@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/product/detailStyle.css" />
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/product/productDetailStyle.css" />
+    
     </head>
    <body>
 <%@ include file="/views/common/header.jsp"%>
@@ -51,13 +52,36 @@
       </div>
       <div class="detail-header-btn">
         <div class="item-qty">
-          <!-- ***수량버튼 바꿔야함*** -->
-          <input class="qty" type="number" />
-          <button class="add-cart">장바구니 담기</button>
-        </div>
+  <div class="input-group">
+      <!--수량버튼 -->
+    <input
+      type="button"
+      value="-"
+      class="button-minus"
+      data-field="quantity"
+      onclick="decrementValue(event);"
+    />
+    <input
+      type="number"
+      step="1"
+      max=""
+      value="1"
+      name="quantity"
+      class="quantity-field"
+    />
+    <input
+      type="button"
+      value="+"
+      class="button-plus"
+      data-field="quantity"
+      onclick="incrementValue(event);"
+    />
+        <button class="add-cart">장바구니 담기</button>
       </div>
-      <hr />
     </div>
+    <hr />
+  </div>
+  </div>
     <div class="item-detail">
       <h2>상품정보</h3>
       <ul>
@@ -186,8 +210,39 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
-    </script>
+      <script>
+      function incrementValue(e) {
+        e.preventDefault();
+        let fieldName = $(e.target).data("field");
+        let parent = $(e.target).closest("div");
+        let currentVal = parseInt(
+          parent.find("input[name=" + fieldName + "]").val(),
+          10
+        );
 
+        if (!isNaN(currentVal)) {
+          parent.find("input[name=" + fieldName + "]").val(currentVal + 1);
+        } else {
+          parent.find("input[name=" + fieldName + "]").val(0);
+        }
+      }
+	//수량버튼 
+      function decrementValue(e) {
+        e.preventDefault();
+        let fieldName = $(e.target).data("field");
+        let parent = $(e.target).closest("div");
+        let currentVal = parseInt(
+          parent.find("input[name=" + fieldName + "]").val(),
+          10
+        );
+
+        if (!isNaN(currentVal) && currentVal > 0) {
+          parent.find("input[name=" + fieldName + "]").val(currentVal - 1);
+        } else {
+          parent.find("input[name=" + fieldName + "]").val(0);
+        }
+      }
+    </script>
 
 </section>
 <%@ include file="/views/common/footer.jsp"%>
