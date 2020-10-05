@@ -23,14 +23,14 @@ href="<%=request.getContextPath() %>/css/login/style.css">
             <div class="si-area">
             	<h1>SIGN UP</h1>
                 	<input type="text" id="id" name="id" autocomplete="off" placeholder="아이디를 입력해주세요" required><br>
+                	<input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요" required><br>
                 	<input type="text" id="name" name="name" autocomplete="off" placeholder="아름를 입력해주세요" required><br>
                 	<input type="text" id="nickname" name="nickname" autocomplete="off" placeholder="닉네임을 입력해주세요" required><br>
                 	<input type="email" id="email" name="email" autocomplete="off" placeholder="이메일을 입력해주세요" required><br>
-                	<input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요" required><br>
             </div>
             <div class="news">
-                <input type="checkbox"><label> THE LATEST NEWS ABOUT POP CULTURE AND FUNKO.<br> 
-                    SIGN ME UP FOR THE WEEKLY FUNKO NEWSLETTER.</label>
+                <input type="checkbox"><label>TOYSPACE의 최근 소식을 볼수 있습니다. <br> 
+                    	최근 소식을 볼려면 체크해주세요.</label>
             </div>
             <div class="btn-area1">
                 <button>가입하기</button>
