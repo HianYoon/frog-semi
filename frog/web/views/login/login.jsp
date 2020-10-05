@@ -20,11 +20,11 @@ href="<%=request.getContextPath() %>/css/login/style.css">
             </div>
                 <h1>LOG IN</h1>
             <div class="in-area">
-                <input type="text" name="id" id="id" autocomplete="off"  required>
+                <input type="text" name="id" id="id" autocomplete="off" placeholder="아이디를 입력해주세요."  required>
                 <label for="id"></label>
             </div>
             <div class="in-area">    
-                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <input type="password" name="pw" id="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요." required>
                 <label for="pw"></label>
             </div>
             <div class="caption">

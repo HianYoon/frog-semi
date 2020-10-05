@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/products/productsStyle.css" />
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/product/productListStyle.css" />
 </head>
 <body>
 	<%@ include file="/views/common/header.jsp" %>
@@ -35,11 +35,11 @@
                                 <label for="">Featured</label>
                                 <div>
                                     <ul>
-                                        <li class="filter_li">
+                                        <li>
                                             <label for=""><input type="checkbox" value="best sellers"></label>
                                             <span>best sellers (#)</span>
                                         </li>
-                                        <li class="filter_li">
+                                        <li>
                                             <label for=""><input type="checkbox" value="new releases"></label>
                                             <span>new releases (#)</span>
                                         </li>
