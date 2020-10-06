@@ -36,6 +36,13 @@ href="<%=request.getContextPath() %>/css/login/style.css">
             <div class="last-area">
                 <p>ToySpace는 처음이신가요?<a href=""> 지금 가입하기</a></p>
             </div>
+            <div class="simple-login">
+                <div class="sp-login" style="margin:50px ;">
+                    <input type="image" id="naver" name="naver" src="<%=request.getContextPath() %>/image/login/naver.PNG">
+                    <input type="image" id="kakao" name="kakao" src="<%=request.getContextPath() %>/image/login/kakao.png">
+                    <input type="image" id="google" name="google" src="<%=request.getContextPath() %>/image/login/google.png">
+                </div>
+            </div>
    </section>
    <%@ include file="/views/common/footer.jsp" %>
 </body>

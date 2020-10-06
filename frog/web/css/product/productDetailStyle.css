@@ -135,30 +135,58 @@ img {
 .detail-header {
   text-align: center;
 }
+.detail-header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 찜 */
+.heart {
+  border: 1px lightgray solid;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.fa-heart {
+  font-size: 25px;
+  padding: 5px;
+  color: lightgray;
+}
+.fa-heart.color {
+  color: hotpink;
+}
 
 /* 리뷰 */
-.review-container {
+.review-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
 }
 .review-btn {
   background-color: black;
   color: white;
   padding: 10px 40px;
-  border-radius: 20px;
+  border-radius: 30px;
   outline: 0;
+  margin: 20px 30px;
+}
+textarea {
+  border-radius: 20px;
 }
 
 /* 추천상품 */
-.main3-pic-text {
+.rec-pic-text {
   display: flex;
   padding: 10px;
   justify-content: space-evenly;
   width: 100%;
 }
 
-.main3-pic-text > div {
+.rec-pic-text > div {
   padding: 0px 10px;
   margin: 10px;
 }
@@ -166,7 +194,7 @@ img {
   text-decoration: none;
   color: black;
 }
-.main3-pic-text img {
+.rec-pic-text img {
   max-width: 100%;
 }
 
@@ -251,3 +279,19 @@ input[type="number"] {
 .button-minus {
   border-radius: 30px 0 0 30px;
 }
+
+/* 리뷰 */
+@media screen and (max-width: 1250px) {
+    .review-content {
+    
+      flex-wrap: wrap;
+    }
+    textarea{
+        width:100%;
+    }
+/* 추천상품 */
+@media screen and (max-width: 768px) {
+    div.rec-pic-text {
+      flex-wrap: wrap;
+    }
+  }
