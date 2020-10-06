@@ -1,4 +1,4 @@
-package com.toyspace.common;
+package com.toyspace.common.filter;
 
 import java.io.IOException;
 import javax.servlet.Filter;
