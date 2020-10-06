@@ -48,17 +48,13 @@
               src="<%=request.getContextPath()%>/image/common/blacklogo.png"
               alt=""
               width="150px"
-              height="100"
             />
           </div>
           <div class="title">
             <h1>관리자 페이지</h1>
           </div>
-
-              
-            
           </div>
-        </div>
+       
         <nav>
           <ul>
             <li><a href="">메인</a></li>
@@ -66,8 +62,9 @@
             <li><a href="">주문관리</a></li>
             <li><a href="">상품등록</a></li>
             <li><a href="">재고관리</a></li>
-            <li><a href="">매출관리</a></li>
+            <li><a href="">매출현황</a></li>
             <li><a href="">태그등록</a></li>
+            <li><a href="">채팅관리</a></li>
             <li><a href="">관리자 계정</a></li>
           </ul>
         </nav>
