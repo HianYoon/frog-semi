@@ -1,8 +1,9 @@
 package com.toyspace.member.model.vo;
 
+import java.util.ArrayList;
 import java.util.Date;
 
-import com.toyspace.order.coupon.model.vo.CouponStatus;
+import com.toyspace.order.coupon.model.vo.Coupon;
 
 public class Member {
 	
@@ -25,8 +26,9 @@ public class Member {
 	private int userLoginStatus;
 	private int userMileage;
 	private String recoveryPassword;
-	private int memberLevel;
-	private CouponStatus ownedCoupons;
+	private int memberLevelNo;
+	private String memberLevelDescription;
+	private ArrayList<Coupon> ownedCoupons;
 	
 	public Member() {
 		// TODO Auto-generated constructor stub
@@ -35,7 +37,8 @@ public class Member {
 	public Member(int memberKey, String userId, String naverAuth, String kakaoAuth, String googleAuth, String userEmail,
 			String password, String userGender, String userName, int userAge, String userBirthday, String userAddress,
 			String userPhone, Date userSignUpDate, String userNickname, String userProfilePicPath, int userLoginStatus,
-			int userMileage, String recoveryPassword, int memberLevel, CouponStatus ownedCoupons) {
+			int userMileage, String recoveryPassword, int memberLevelNo, String memberLevelDescription,
+			ArrayList<Coupon> ownedCoupons) {
 		super();
 		this.memberKey = memberKey;
 		this.userId = userId;
@@ -56,7 +59,8 @@ public class Member {
 		this.userLoginStatus = userLoginStatus;
 		this.userMileage = userMileage;
 		this.recoveryPassword = recoveryPassword;
-		this.memberLevel = memberLevel;
+		this.memberLevelNo = memberLevelNo;
+		this.memberLevelDescription = memberLevelDescription;
 		this.ownedCoupons = ownedCoupons;
 	}
 
@@ -212,19 +216,27 @@ public class Member {
 		this.recoveryPassword = recoveryPassword;
 	}
 
-	public int getMemberLevel() {
-		return memberLevel;
+	public int getMemberLevelNo() {
+		return memberLevelNo;
 	}
 
-	public void setMemberLevel(int memberLevel) {
-		this.memberLevel = memberLevel;
+	public void setMemberLevelNo(int memberLevelNo) {
+		this.memberLevelNo = memberLevelNo;
 	}
 
-	public CouponStatus getOwnedCoupons() {
+	public String getMemberLevelDescription() {
+		return memberLevelDescription;
+	}
+
+	public void setMemberLevelDescription(String memberLevelDescription) {
+		this.memberLevelDescription = memberLevelDescription;
+	}
+
+	public ArrayList<Coupon> getOwnedCoupons() {
 		return ownedCoupons;
 	}
 
-	public void setOwnedCoupons(CouponStatus ownedCoupons) {
+	public void setOwnedCoupons(ArrayList<Coupon> ownedCoupons) {
 		this.ownedCoupons = ownedCoupons;
 	}
 
@@ -235,7 +247,8 @@ public class Member {
 		result = prime * result + ((googleAuth == null) ? 0 : googleAuth.hashCode());
 		result = prime * result + ((kakaoAuth == null) ? 0 : kakaoAuth.hashCode());
 		result = prime * result + memberKey;
-		result = prime * result + memberLevel;
+		result = prime * result + ((memberLevelDescription == null) ? 0 : memberLevelDescription.hashCode());
+		result = prime * result + memberLevelNo;
 		result = prime * result + ((naverAuth == null) ? 0 : naverAuth.hashCode());
 		result = prime * result + ((ownedCoupons == null) ? 0 : ownedCoupons.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
@@ -277,7 +290,12 @@ public class Member {
 			return false;
 		if (memberKey != other.memberKey)
 			return false;
-		if (memberLevel != other.memberLevel)
+		if (memberLevelDescription == null) {
+			if (other.memberLevelDescription != null)
+				return false;
+		} else if (!memberLevelDescription.equals(other.memberLevelDescription))
+			return false;
+		if (memberLevelNo != other.memberLevelNo)
 			return false;
 		if (naverAuth == null) {
 			if (other.naverAuth != null)
@@ -366,7 +384,9 @@ public class Member {
 				+ userBirthday + ", userAddress=" + userAddress + ", userPhone=" + userPhone + ", userSignUpDate="
 				+ userSignUpDate + ", userNickname=" + userNickname + ", userProfilePicPath=" + userProfilePicPath
 				+ ", userLoginStatus=" + userLoginStatus + ", userMileage=" + userMileage + ", recoveryPassword="
-				+ recoveryPassword + ", memberLevel=" + memberLevel + ", ownedCoupons=" + ownedCoupons + "]";
+				+ recoveryPassword + ", memberLevelNo=" + memberLevelNo + ", memberLevelDescription="
+				+ memberLevelDescription + ", ownedCoupons=" + ownedCoupons + "]";
 	}
+
 	
 }

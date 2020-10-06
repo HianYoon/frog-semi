@@ -6,6 +6,7 @@ public class Product {
 	
 	private int productId;
 	private int categoryNo;
+	private String categoryName;
 	private String productName;
 	private double productPrice;
 	private int productStock;
@@ -14,19 +15,22 @@ public class Product {
 	private String manufacturedCountry;
 	private int recommendedAge;
 	private String caution;
-	private String[] productImageFilePaths;
+	private String[] productImageFilePaths= new String[5];
 	private int likes;
+	
 	
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(int productId, int categoryNo, String productName, double productPrice, int productStock,
-			String productDescription, String manufacturer, String manufacturedCountry, int recommendedAge,
-			String caution, String[] productImageFilePaths, int likes) {
+
+	public Product(int productId, int categoryNo, String categoryName, String productName, double productPrice,
+			int productStock, String productDescription, String manufacturer, String manufacturedCountry,
+			int recommendedAge, String caution, String[] productImageFilePaths, int likes) {
 		super();
 		this.productId = productId;
 		this.categoryNo = categoryNo;
+		this.categoryName = categoryName;
 		this.productName = productName;
 		this.productPrice = productPrice;
 		this.productStock = productStock;
@@ -38,107 +42,143 @@ public class Product {
 		this.productImageFilePaths = productImageFilePaths;
 		this.likes = likes;
 	}
+
 
 	public int getProductId() {
 		return productId;
 	}
 
+
 	public void setProductId(int productId) {
 		this.productId = productId;
 	}
+
 
 	public int getCategoryNo() {
 		return categoryNo;
 	}
 
+
 	public void setCategoryNo(int categoryNo) {
 		this.categoryNo = categoryNo;
 	}
+
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
 
 	public String getProductName() {
 		return productName;
 	}
 
+
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
+
 
 	public double getProductPrice() {
 		return productPrice;
 	}
 
+
 	public void setProductPrice(double productPrice) {
 		this.productPrice = productPrice;
 	}
+
 
 	public int getProductStock() {
 		return productStock;
 	}
 
+
 	public void setProductStock(int productStock) {
 		this.productStock = productStock;
 	}
+
 
 	public String getProductDescription() {
 		return productDescription;
 	}
 
+
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
 	}
+
 
 	public String getManufacturer() {
 		return manufacturer;
 	}
 
+
 	public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
 	}
+
 
 	public String getManufacturedCountry() {
 		return manufacturedCountry;
 	}
 
+
 	public void setManufacturedCountry(String manufacturedCountry) {
 		this.manufacturedCountry = manufacturedCountry;
 	}
+
 
 	public int getRecommendedAge() {
 		return recommendedAge;
 	}
 
+
 	public void setRecommendedAge(int recommendedAge) {
 		this.recommendedAge = recommendedAge;
 	}
+
 
 	public String getCaution() {
 		return caution;
 	}
 
+
 	public void setCaution(String caution) {
 		this.caution = caution;
 	}
+
 
 	public String[] getProductImageFilePaths() {
 		return productImageFilePaths;
 	}
 
+
 	public void setProductImageFilePaths(String[] productImageFilePaths) {
 		this.productImageFilePaths = productImageFilePaths;
 	}
+
 
 	public int getLikes() {
 		return likes;
 	}
 
+
 	public void setLikes(int likes) {
 		this.likes = likes;
 	}
+
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((categoryName == null) ? 0 : categoryName.hashCode());
 		result = prime * result + categoryNo;
 		result = prime * result + ((caution == null) ? 0 : caution.hashCode());
 		result = prime * result + likes;
@@ -156,6 +196,7 @@ public class Product {
 		return result;
 	}
 
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -165,6 +206,11 @@ public class Product {
 		if (getClass() != obj.getClass())
 			return false;
 		Product other = (Product) obj;
+		if (categoryName == null) {
+			if (other.categoryName != null)
+				return false;
+		} else if (!categoryName.equals(other.categoryName))
+			return false;
 		if (categoryNo != other.categoryNo)
 			return false;
 		if (caution == null) {
@@ -207,14 +253,16 @@ public class Product {
 		return true;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Product [productId=" + productId + ", categoryNo=" + categoryNo + ", productName=" + productName
-				+ ", productPrice=" + productPrice + ", productStock=" + productStock + ", productDescription="
-				+ productDescription + ", manufacturer=" + manufacturer + ", manufacturedCountry=" + manufacturedCountry
-				+ ", recommendedAge=" + recommendedAge + ", caution=" + caution + ", productImageFilePaths="
-				+ Arrays.toString(productImageFilePaths) + ", likes=" + likes + "]";
+		return "Product [productId=" + productId + ", categoryNo=" + categoryNo + ", categoryName=" + categoryName
+				+ ", productName=" + productName + ", productPrice=" + productPrice + ", productStock=" + productStock
+				+ ", productDescription=" + productDescription + ", manufacturer=" + manufacturer
+				+ ", manufacturedCountry=" + manufacturedCountry + ", recommendedAge=" + recommendedAge + ", caution="
+				+ caution + ", productImageFilePaths=" + Arrays.toString(productImageFilePaths) + ", likes=" + likes
+				+ "]";
 	}
-	
+
 	
 }

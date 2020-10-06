@@ -7,6 +7,7 @@ public class Admin {
 	private String nickname;
 	private String adminName;
 	private int adminLevel;
+	private String adminLevelDescription;
 	
 	
 	public Admin() {
@@ -14,13 +15,15 @@ public class Admin {
 	}
 
 
-	public Admin(String adminId, String adminPassword, String nickname, String adminName, int adminLevel) {
+	public Admin(String adminId, String adminPassword, String nickname, String adminName, int adminLevel,
+			String adminLevelDescription) {
 		super();
 		this.adminId = adminId;
 		this.adminPassword = adminPassword;
 		this.nickname = nickname;
 		this.adminName = adminName;
 		this.adminLevel = adminLevel;
+		this.adminLevelDescription = adminLevelDescription;
 	}
 
 
@@ -74,12 +77,23 @@ public class Admin {
 	}
 
 
+	public String getAdminLevelDescription() {
+		return adminLevelDescription;
+	}
+
+
+	public void setAdminLevelDescription(String adminLevelDescription) {
+		this.adminLevelDescription = adminLevelDescription;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((adminId == null) ? 0 : adminId.hashCode());
 		result = prime * result + adminLevel;
+		result = prime * result + ((adminLevelDescription == null) ? 0 : adminLevelDescription.hashCode());
 		result = prime * result + ((adminName == null) ? 0 : adminName.hashCode());
 		result = prime * result + ((adminPassword == null) ? 0 : adminPassword.hashCode());
 		result = prime * result + ((nickname == null) ? 0 : nickname.hashCode());
@@ -103,6 +117,11 @@ public class Admin {
 			return false;
 		if (adminLevel != other.adminLevel)
 			return false;
+		if (adminLevelDescription == null) {
+			if (other.adminLevelDescription != null)
+				return false;
+		} else if (!adminLevelDescription.equals(other.adminLevelDescription))
+			return false;
 		if (adminName == null) {
 			if (other.adminName != null)
 				return false;
@@ -125,10 +144,9 @@ public class Admin {
 	@Override
 	public String toString() {
 		return "Admin [adminId=" + adminId + ", adminPassword=" + adminPassword + ", nickname=" + nickname
-				+ ", adminName=" + adminName + ", adminLevel=" + adminLevel + "]";
+				+ ", adminName=" + adminName + ", adminLevel=" + adminLevel + ", adminLevelDescription="
+				+ adminLevelDescription + "]";
 	}
-	
-	
-	
+
 	
 }
