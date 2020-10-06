@@ -40,7 +40,7 @@ section .{
     margin-top: 20px;
     text-align: center;
 }
-section . button{
+section .btn-area button{
     width: 60%;
     height: 40px;
     border-radius: 50px;
