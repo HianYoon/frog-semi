@@ -16,7 +16,7 @@
 		<header>
 			<div class="header-container">
 				<div class="header-logo">
-					<a href="">
+					<a href="<%=request.getContextPath()%>">
 						<img
 							src="<%=request.getContextPath()%>/image/common/blacklogo.png"
 							alt="logo"
@@ -121,7 +121,7 @@
 							</a>
 						</li>
 						<li class="user-li">
-							<a href="">
+							<a href="<%=request.getContextPath()%>/login.do">
 								<i class="fas fa-user-astronaut user"></i>
 							</a>
 						</li>
